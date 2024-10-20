@@ -22,6 +22,11 @@ namespace SmartHomeUi.Controls
     {
         public static readonly DependencyProperty CaptionProperty = DependencyProperty.Register("Caption", typeof(string), typeof(ButtonAdd));
 
+        public string Caption
+        {
+            get { return (string)GetValue(CaptionProperty); }
+            set { SetValue(CaptionProperty, value); }
+        }
 
         public ButtonAdd()
         {
