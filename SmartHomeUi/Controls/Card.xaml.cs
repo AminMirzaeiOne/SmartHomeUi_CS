@@ -32,6 +32,12 @@ namespace SmartHomeUi.Controls
             set { SetValue(TitleProperty, value); }
         }
 
+        public bool IsChecked
+        {
+            get { return (bool)GetValue(IsCheckedProperty); }
+            set { SetValue(IsCheckedProperty, value); }
+        }
+
         public Card()
         {
             InitializeComponent();
