@@ -38,6 +38,12 @@ namespace SmartHomeUi.Controls
             set { SetValue(IsCheckedProperty, value); }
         }
 
+        public bool IsHorizontal
+        {
+            get { return (bool)GetValue(IsHorizontalProperty); }
+            set { SetValue(IsHorizontalProperty, value); }
+        }
+
         public Card()
         {
             InitializeComponent();
