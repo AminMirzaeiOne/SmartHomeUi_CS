@@ -20,6 +20,9 @@ namespace SmartHomeUi.Controls
     /// </summary>
     public partial class ButtonAdd : UserControl
     {
+        public static readonly DependencyProperty CaptionProperty = DependencyProperty.Register("Caption", typeof(string), typeof(ButtonAdd));
+
+
         public ButtonAdd()
         {
             InitializeComponent();
