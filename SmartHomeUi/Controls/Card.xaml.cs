@@ -50,6 +50,12 @@ namespace SmartHomeUi.Controls
             set { SetValue(ImageOnProperty, value); }
         }
 
+        public ImageSource ImageOff
+        {
+            get { return (ImageSource)GetValue(ImageOffProperty); }
+            set { SetValue(ImageOffProperty, value); }
+        }
+
         public Card()
         {
             InitializeComponent();
