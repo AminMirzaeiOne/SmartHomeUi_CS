@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:SmartHomeUi.Controls"
              mc:Ignorable="d" 
              Name="buttonAdd">
-    <Grid>
+    <Button>
             
-    </Grid>
+    </Button>
 </UserControl>
