@@ -10,5 +10,29 @@
         <Border.Effect>
             <DropShadowEffect ShadowDepth="1" BlurRadius="20" Opacity="0.5"/>
         </Border.Effect>
+
+        <Border.Style>
+            <Style TargetType="Border">
+                <Setter Property="Width" Value="150" />
+                <Style.Triggers>
+                    <DataTrigger Binding="{Binding ElementName=toggle, Path=IsChecked}" Value="True">
+                        <Setter Property="Background" Value="#3256F1" />
+                    </DataTrigger>
+
+                    <DataTrigger Binding="{Binding ElementName=toggle, Path=IsChecked}" Value="False">
+                        <Setter Property="Background" Value="#EFEFEE" />
+                    </DataTrigger>
+
+                    <DataTrigger Binding="{Binding ElementName=card, Path=IsHorizontal}" Value="True">
+                        <Setter Property="Width" Value="190" />
+                    </DataTrigger>
+
+                    <DataTrigger Binding="{Binding ElementName=card, Path=IsHorizontal}" Value="False">
+                        <Setter Property="Width" Value="150" />
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+        </Border.Style>
+
     </Border>
 </UserControl>
