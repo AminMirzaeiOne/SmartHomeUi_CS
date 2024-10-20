@@ -21,6 +21,7 @@ namespace SmartHomeUi.Controls
     public partial class Card : UserControl
     {
         public static readonly DependencyProperty TitleProperty = DependencyProperty.Register("Title", typeof(string), typeof(Card));
+        public static readonly DependencyProperty IsCheckedProperty = DependencyProperty.Register("IsChecked", typeof(bool), typeof(Card));
 
 
         public Card()
