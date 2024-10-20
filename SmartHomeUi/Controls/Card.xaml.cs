@@ -20,6 +20,9 @@ namespace SmartHomeUi.Controls
     /// </summary>
     public partial class Card : UserControl
     {
+        public static readonly DependencyProperty TitleProperty = DependencyProperty.Register("Title", typeof(string), typeof(Card));
+
+
         public Card()
         {
             InitializeComponent();
