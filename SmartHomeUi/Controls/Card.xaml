@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:SmartHomeUi.Controls"
              mc:Ignorable="d" 
              Name="card">
-    <Border>
+    <Border CornerRadius="25" Padding="20" Height="150" HorizontalAlignment="Stretch">
             
     </Border>
 </UserControl>
