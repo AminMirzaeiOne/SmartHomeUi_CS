@@ -34,5 +34,74 @@
             </Style>
         </Border.Style>
 
+        <Grid>
+            <TextBlock FontWeight="SemiBold" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0 5 0 0">
+                <TextBlock.Style>
+                    <Style TargetType="TextBlock">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding ElementName=toggle, Path=IsChecked}" Value="True">
+                                <Setter Property="Text" Value="On" />
+                                <Setter Property="Foreground" Value="#ffffff" />
+                            </DataTrigger>
+
+                            <DataTrigger Binding="{Binding ElementName=toggle, Path=IsChecked}" Value="False">
+                                <Setter Property="Text" Value="Off" />
+                                <Setter Property="Foreground" Value="#3256F1" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+
+            <CheckBox x:Name="toggle" IsChecked="{Binding ElementName=card,Path=IsChecked}" HorizontalAlignment="Right">
+                <CheckBox.Style>
+                    <Style TargetType="CheckBox" BasedOn="{StaticResource toggleButton}">
+                        <Setter Property="VerticalAlignment" Value="Top" />
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding ElementName=card, Path=IsHorizontal}" Value="True">
+                                <Setter Property="VerticalAlignment" Value="Center" />
+                            </DataTrigger>
+
+                            <DataTrigger Binding="{Binding ElementName=card, Path=IsHorizontal}" Value="False">
+                                <Setter Property="VerticalAlignment" Value="Top" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </CheckBox.Style>
+            </CheckBox>
+
+            <Image VerticalAlignment="Center" Width="40" Height="40" HorizontalAlignment="Left">
+                <Image.Style>
+                    <Style TargetType="Image">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding ElementName=toggle, Path=IsChecked}" Value="True">
+                                <Setter Property="Source" Value="{Binding ElementName=card,Path=ImageOn}" />
+                            </DataTrigger>
+
+                            <DataTrigger Binding="{Binding ElementName=toggle, Path=IsChecked}" Value="False">
+                                <Setter Property="Source" Value="{Binding ElementName=card,Path=ImageOff}" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Style>
+            </Image>
+
+            <TextBlock Text="{Binding ElementName=card,Path=Title}" VerticalAlignment="Bottom" FontWeight="SemiBold">
+                <TextBlock.Style>
+                    <Style TargetType="TextBlock">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding ElementName=toggle, Path=IsChecked}" Value="True">
+                                <Setter Property="Foreground" Value="#ffffff" />
+                            </DataTrigger>
+
+                            <DataTrigger Binding="{Binding ElementName=toggle, Path=IsChecked}" Value="False">
+                                <Setter Property="Foreground" Value="#2F2C37" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+        </Grid>
+
     </Border>
 </UserControl>
