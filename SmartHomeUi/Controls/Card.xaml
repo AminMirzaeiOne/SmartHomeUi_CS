@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:SmartHomeUi.Controls"
              mc:Ignorable="d" 
              Name="card">
-    <Grid>
+    <Border>
             
-    </Grid>
+    </Border>
 </UserControl>
