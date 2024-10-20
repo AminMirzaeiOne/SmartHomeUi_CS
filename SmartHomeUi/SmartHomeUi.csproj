@@ -96,7 +96,28 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controls\" />
-    <Folder Include="Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\add.png" />
+    <Resource Include="Images\cordinator_off.png" />
+    <Resource Include="Images\cordinator_on.png" />
+    <Resource Include="Images\electric_off.png" />
+    <Resource Include="Images\electric_on.png" />
+    <Resource Include="Images\fridge_off.png" />
+    <Resource Include="Images\fridge_on.png" />
+    <Resource Include="Images\light_off.png" />
+    <Resource Include="Images\light_on.png" />
+    <Resource Include="Images\p10.jpg" />
+    <Resource Include="Images\p2.jpg" />
+    <Resource Include="Images\_bed.png" />
+    <Resource Include="Images\_chart.png" />
+    <Resource Include="Images\_home2.png" />
+    <Resource Include="Images\_home3.png" />
+    <Resource Include="Images\_location.png" />
+    <Resource Include="Images\_logout.png" />
+    <Resource Include="Images\_setting.png" />
+    <Resource Include="Images\_shield.png" />
+    <Resource Include="Images\_users.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
