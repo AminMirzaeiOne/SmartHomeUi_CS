@@ -7,6 +7,8 @@
              mc:Ignorable="d" 
              Name="card">
     <Border CornerRadius="25" Padding="20" Height="150" HorizontalAlignment="Stretch">
-            
+        <Border.Effect>
+            <DropShadowEffect ShadowDepth="1" BlurRadius="20" Opacity="0.5"/>
+        </Border.Effect>
     </Border>
 </UserControl>
