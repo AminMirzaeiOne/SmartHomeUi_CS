@@ -44,6 +44,12 @@ namespace SmartHomeUi.Controls
             set { SetValue(IsHorizontalProperty, value); }
         }
 
+        public ImageSource ImageOn
+        {
+            get { return (ImageSource)GetValue(ImageOnProperty); }
+            set { SetValue(ImageOnProperty, value); }
+        }
+
         public Card()
         {
             InitializeComponent();
