@@ -33,5 +33,19 @@
                 </Trigger>
             </Style.Triggers>
         </Style>
+
+        <Style x:Key="borderPage" TargetType="Border">
+            <Setter Property="Background" Value="#000000" />
+            <Setter Property="CornerRadius" Value="25" />
+            <Setter Property="Grid.Column" Value="1" />
+            <Setter Property="Margin" Value="30 0 0 0" />
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect ShadowDepth="1" BlurRadius="20" Opacity="0.5"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        
+        
     </Application.Resources>
 </Application>
