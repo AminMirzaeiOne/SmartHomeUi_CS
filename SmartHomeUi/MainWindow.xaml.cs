@@ -30,6 +30,27 @@ namespace SmartHomeUi
             }
         }
 
+        private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ClickCount == 2)
+            {
+                if (isMaximize)
+                {
+                    this.WindowState = WindowState.Normal;
+                    this.Width = 1080;
+                    this.Height = 720;
+
+                    isMaximize = false;
+                }
+                else
+                {
+                    this.WindowState = WindowState.Maximized;
+
+                    isMaximize = true;
+                }
+            }
+        }
+
         public MainWindow()
         {
             InitializeComponent();
