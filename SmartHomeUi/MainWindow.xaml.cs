@@ -22,6 +22,14 @@ namespace SmartHomeUi
     {
         private bool isMaximize = false;
 
+        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+            {
+                this.DragMove();
+            }
+        }
+
         public MainWindow()
         {
             InitializeComponent();
