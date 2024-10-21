@@ -97,6 +97,10 @@
                         </Button>
                     </StackPanel>
 
+                    <Button x:Name="btnProfile" Style="{StaticResource menuButton}" Margin="15 0 15 25" VerticalAlignment="Bottom" Click="btnExit_Click">
+                        <Image Source="/Images/_logout.png" Width="20"/>
+                    </Button>
+
                     <Button x:Name="btnExit" Style="{StaticResource menuButton}" Margin="15 0 15 25" VerticalAlignment="Bottom" Click="btnExit_Click">
                         <Image Source="/Images/_logout.png" Width="20"/>
                     </Button>
