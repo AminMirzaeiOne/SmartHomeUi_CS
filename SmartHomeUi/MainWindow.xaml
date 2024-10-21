@@ -14,7 +14,96 @@
                 <ColumnDefinition Width="80"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            
+
+            <!--Menu-->
+            <Border CornerRadius="10" Background="#3253F1">
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="1" BlurRadius="20" Opacity="0.4"/>
+                </Border.Effect>
+
+                <Grid>
+                    <StackPanel>
+
+                        <Button Style="{StaticResource menuButton}" Margin="15 40 15 20" Background="White">
+                            <Button.Triggers>
+                                <EventTrigger RoutedEvent="Button.Click">
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation Storyboard.TargetName="page1" 
+                                                 Storyboard.TargetProperty="(Border.RenderTransform).(TranslateTransform.Y)"
+                                                 To="0" Duration="00:00:0.5"/>
+
+                                            <DoubleAnimation Storyboard.TargetName="page2" 
+                                                 Storyboard.TargetProperty="(Border.RenderTransform).(TranslateTransform.Y)"
+                                                 To="{Binding ElementName=window,Path=ActualHeight}" Duration="00:00:0.3"/>
+
+                                            <DoubleAnimation Storyboard.TargetName="page1"
+                                                 Storyboard.TargetProperty="Opacity" To="1.0" Duration="0:0:0.5"/>
+
+                                            <DoubleAnimation Storyboard.TargetName="page2"
+                                                 Storyboard.TargetProperty="Opacity" To="0.0" Duration="0:0:0.5"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger>
+                            </Button.Triggers>
+
+                            <Image Source="/Images/_home2.png" Width="20"/>
+                        </Button>
+
+                        <Button Style="{StaticResource menuButton}">
+                            <Button.Triggers>
+                                <EventTrigger RoutedEvent="Button.Click">
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation Storyboard.TargetName="page1"
+                                                 Storyboard.TargetProperty="(Border.RenderTransform).(TranslateTransform.Y)"
+                                                 To="{Binding ElementName=window,Path=ActualHeight}" Duration="00:00:0.3"/>
+
+                                            <DoubleAnimation Storyboard.TargetName="page2" 
+                                                 Storyboard.TargetProperty="(Border.RenderTransform).(TranslateTransform.Y)"
+                                                 To="0" Duration="00:00:0.5"/>
+
+                                            <DoubleAnimation Storyboard.TargetName="page1"
+                                                 Storyboard.TargetProperty="Opacity" To="0.0" Duration="0:0:0.5"/>
+
+                                            <DoubleAnimation Storyboard.TargetName="page2"
+                                                 Storyboard.TargetProperty="Opacity" To="1.0" Duration="0:0:0.5"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger>
+                            </Button.Triggers>
+
+                            <Image Source="/Images/_bed.png" Width="20"/>
+                        </Button>
+
+                        <Button Style="{StaticResource menuButton}">
+                            <Image Source="/Images/_users.png" Width="20"/>
+                        </Button>
+
+                        <Button Style="{StaticResource menuButton}">
+                            <Image Source="/Images/_shield.png" Width="20"/>
+                        </Button>
+
+                        <Button Style="{StaticResource menuButton}">
+                            <Image Source="/Images/_location.png" Width="20"/>
+                        </Button>
+
+                        <Button Style="{StaticResource menuButton}">
+                            <Image Source="/Images/_chart.png" Width="20"/>
+                        </Button>
+
+                        <Button Style="{StaticResource menuButton}">
+                            <Image Source="/Images/_setting.png" Width="20"/>
+                        </Button>
+                    </StackPanel>
+
+                    <Button Style="{StaticResource menuButton}" Margin="15 0 15 25" VerticalAlignment="Bottom">
+                        <Image Source="/Images/_logout.png" Width="20"/>
+                    </Button>
+                </Grid>
+
+            </Border>
+
         </Grid>
     </Border>
 </Window>
