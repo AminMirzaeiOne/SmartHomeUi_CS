@@ -10,6 +10,10 @@
         Background="Transparent" WindowStyle="None" AllowsTransparency="True" Name="window">
     <Border Background="#ffffff" Padding="30" CornerRadius="25" MouseDown="Border_MouseDown" MouseLeftButtonDown="Border_MouseLeftButtonDown">
         <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
             
         </Grid>
     </Border>
