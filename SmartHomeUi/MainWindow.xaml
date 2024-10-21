@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         Height="720" Width="1080" WindowStartupLocation="CenterScreen"
         Background="Transparent" WindowStyle="None" AllowsTransparency="True" Name="window">
-    <Border>
+    <Border Background="#ffffff" Padding="30" CornerRadius="25" MouseDown="Border_MouseDown" MouseLeftButtonDown="Border_MouseLeftButtonDown">
         
     </Border>
 </Window>
