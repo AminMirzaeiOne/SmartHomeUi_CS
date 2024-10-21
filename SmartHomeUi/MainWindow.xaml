@@ -97,9 +97,12 @@
                         </Button>
                     </StackPanel>
 
-                    <Button x:Name="btnProfile" Style="{StaticResource menuButton}" Margin="15 0 15 25" VerticalAlignment="Bottom" Click="btnExit_Click">
-                        <Image Source="/Images/_logout.png" Width="20"/>
-                    </Button>
+                    <Ellipse x:Name="btnProfile" Margin="20,539,20,0" VerticalAlignment="Top" Height="40">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="/Images/AminMirzaeiProfile.png"/>
+                        </Ellipse.Fill>
+
+                    </Ellipse>
 
                     <Button x:Name="btnExit" Style="{StaticResource menuButton}" Margin="15 0 15 25" VerticalAlignment="Bottom" Click="btnExit_Click">
                         <Image Source="/Images/_logout.png" Width="20"/>
