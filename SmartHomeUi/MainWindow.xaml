@@ -145,14 +145,14 @@
                                 </Grid.RowDefinitions>
 
                                 <!--Cards-->
-                                <uc:Card Grid.Row="0" Grid.Column="0" Margin="0 0 8 8" Title="Refridgerator" ImageOff="/Images/fridge_off.png" ImageOn="/Images/fridge_on.png"/>
+                                <!--<uc:Card Grid.Row="0" Grid.Column="0" Margin="0 0 8 8" Title="Refridgerator" ImageOff="/Images/fridge_off.png" ImageOn="/Images/fridge_on.png"/>
                                 <uc:Card Grid.Row="0" Grid.Column="1" Margin="8 0 0 8" Title="Temprature" ImageOff="/Images/electric_off.png" ImageOn="/Images/electric_on.png" IsChecked="True"/>
                                 <uc:Card Grid.Row="1" Grid.Column="0" Margin="0 8 8 0" Title="Air Conditioner" ImageOff="/Images/cordinator_off.png" ImageOn="/Images/cordinator_on.png"/>
-                                <uc:Card Grid.Row="1" Grid.Column="1" Margin="8 8 0 0" Title="Lights" ImageOff="/Images/light_off.png" ImageOn="/Images/light_on.png"/>
+                                <uc:Card Grid.Row="1" Grid.Column="1" Margin="8 8 0 0" Title="Lights" ImageOff="/Images/light_off.png" ImageOn="/Images/light_on.png"/>-->
                             </Grid>
 
                             <!--Add Button-->
-                            <uc:ButtonAdd Caption="Add New Room" Grid.Column="1" Margin="0 50 0 0" HorizontalAlignment="Center"/>
+                            <!--<uc:ButtonAdd Caption="Add New Room" Grid.Column="1" Margin="0 50 0 0" HorizontalAlignment="Center"/>-->
 
                         </StackPanel>
                     </Grid>
@@ -178,7 +178,7 @@
                         </Grid.RowDefinitions>
 
                         <!--Add Button-->
-                        <uc:ButtonAdd Caption="Add New Device" Margin="0 40 40 0"/>
+                        <!--<uc:ButtonAdd Caption="Add New Device" Margin="0 40 40 0"/>-->
 
                         <!--Titles-->
                         <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 40 0 0">
@@ -200,10 +200,10 @@
                             </Grid.ColumnDefinitions>
 
                             <!--Cards-->
-                            <uc:Card Grid.Column="0" IsHorizontal="True" Margin="12 0 12 0" Title="Refridgerator" ImageOff="/Images/fridge_off.png" ImageOn="/Images/fridge_on.png"/>
+                            <!--<uc:Card Grid.Column="0" IsHorizontal="True" Margin="12 0 12 0" Title="Refridgerator" ImageOff="/Images/fridge_off.png" ImageOn="/Images/fridge_on.png"/>
                             <uc:Card Grid.Column="1" IsHorizontal="True" Margin="12 0 12 0" Title="Temprature" ImageOff="/Images/electric_off.png" ImageOn="/Images/electric_on.png" IsChecked="True"/>
                             <uc:Card Grid.Column="2" IsHorizontal="True" Margin="12 0 12 0" Title="Air Conditioner" ImageOff="/Images/cordinator_off.png" ImageOn="/Images/cordinator_on.png"/>
-                            <uc:Card Grid.Column="3" IsHorizontal="True" Margin="12 0 12 0" Title="Lights" ImageOff="/Images/light_off.png" ImageOn="/Images/light_on.png"/>
+                            <uc:Card Grid.Column="3" IsHorizontal="True" Margin="12 0 12 0" Title="Lights" ImageOff="/Images/light_off.png" ImageOn="/Images/light_on.png"/>-->
 
                         </Grid>
                     </Grid>
