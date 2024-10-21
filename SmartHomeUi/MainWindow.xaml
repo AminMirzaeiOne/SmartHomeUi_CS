@@ -104,6 +104,62 @@
 
             </Border>
 
+            <!--Page 1-->
+            <Border x:Name="page1" Style="{StaticResource borderPage}">
+                <Border.RenderTransform>
+                    <TranslateTransform Y="0"/>
+                </Border.RenderTransform>
+
+                <Border CornerRadius="25">
+                    <Border.Background>
+                        <ImageBrush ImageSource="/Images/p2.jpg" Stretch="Fill" Opacity="0.6"/>
+                    </Border.Background>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <!--Titles-->
+                        <StackPanel VerticalAlignment="Center" Margin="60 0 0 0">
+                            <TextBlock Text="Controlling" Foreground="#ffffff" FontSize="22"/>
+                            <TextBlock Text="Lounge and Kitchen" Foreground="#ffffff" Margin="0 10 0 10" FontSize="36" FontWeight="Bold" TextWrapping="Wrap"/>
+                            <TextBlock Foreground="#ffffff" FontSize="32">
+                    <Run>32</Run><Run FontWeight="Thin" FontSize="26">°c</Run>
+                            </TextBlock>
+                            <TextBlock Text="Celcious" Foreground="#ffffff" FontSize="12" Margin="15 0 0 0"/>
+                        </StackPanel>
+
+                        <!--Panels-->
+                        <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="0 0 50 0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+
+                                <!--Cards-->
+                                <uc:Card Grid.Row="0" Grid.Column="0" Margin="0 0 8 8" Title="Refridgerator" ImageOff="/Images/fridge_off.png" ImageOn="/Images/fridge_on.png"/>
+                                <uc:Card Grid.Row="0" Grid.Column="1" Margin="8 0 0 8" Title="Temprature" ImageOff="/Images/electric_off.png" ImageOn="/Images/electric_on.png" IsChecked="True"/>
+                                <uc:Card Grid.Row="1" Grid.Column="0" Margin="0 8 8 0" Title="Air Conditioner" ImageOff="/Images/cordinator_off.png" ImageOn="/Images/cordinator_on.png"/>
+                                <uc:Card Grid.Row="1" Grid.Column="1" Margin="8 8 0 0" Title="Lights" ImageOff="/Images/light_off.png" ImageOn="/Images/light_on.png"/>
+                            </Grid>
+
+                            <!--Add Button-->
+                            <uc:ButtonAdd Caption="Add New Room" Grid.Column="1" Margin="0 50 0 0" HorizontalAlignment="Center"/>
+
+                        </StackPanel>
+                    </Grid>
+
+                </Border>
+            </Border>
+
         </Grid>
     </Border>
 </Window>
