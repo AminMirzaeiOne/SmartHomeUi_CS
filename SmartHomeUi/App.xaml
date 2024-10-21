@@ -45,7 +45,46 @@
                 </Setter.Value>
             </Setter>
         </Style>
-        
-        
+
+        <Style x:Key="toggleButton" TargetType="ToggleButton">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ToggleButton">
+                        <Grid>
+                            <Border x:Name="Border" Background="#3256F1" CornerRadius="13" Width="50" Height="26" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <Ellipse x:Name="Ellipse" Fill="#fbfbfb" Height="24" Width="24" Margin="25 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                        </Grid>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <ColorAnimation Storyboard.TargetName="Border" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)"
+                                                To="#001C91" Duration="0:0:0.2"/>
+                                            <ThicknessAnimation Storyboard.TargetName="Ellipse" Storyboard.TargetProperty="Margin"
+                                                    To="1 0 0 0" Duration="0:0:0.2"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <ColorAnimation Storyboard.TargetName="Border" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)"
+                                                To="#3256F1" Duration="0:0:0.2"/>
+                                            <ThicknessAnimation Storyboard.TargetName="Ellipse" Storyboard.TargetProperty="Margin"
+                                                    To="25 0 0 0" Duration="0:0:0.2"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+
     </Application.Resources>
 </Application>
